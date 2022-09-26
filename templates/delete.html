@@ -1,0 +1,30 @@
+<body>
+	<div id="herewego">
+	<form method="POST" action="/delete"  name="">
+	<input type="email" placeholder="Enter mail id of record to be changed" name="email">	
+	<input type="submit" name="submit" style="cursor:pointer;width:200px;"value="Delete">
+	</form>
+	</div>
+<br>
+<div style="background:#ff0000;display:flex;justify-content:center;align-items:center;min-height:100px;">
+    <button id="move" >Home</button>
+ </div>
+ 
+ 
+ </body>
+ <script>
+     document.getElementById('move').onclick= function () {
+       location.href='/';
+     };
+ </script>
+</script>
+<style>
+    @media (max-width: 767px) {
+    .footer{
+        width:100%;
+    }
+    #herewego{
+        min-height:500px !important;
+    }
+}
+</style>

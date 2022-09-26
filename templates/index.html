@@ -1,0 +1,47 @@
+<!-- <form method="POST" action="">
+	Name <input type="text" name="name" />
+	<br>
+	Email <input type="email" name="email" />
+	<br>
+	<input type="submit">
+</form> -->
+<body>
+	<div id="herewego"style="background:red;display:flex;justify-content:center;align-items:center;min-height:600px;">
+	<form method="POST" action=""  name="jointeamform">
+	<input type="text" placeholder="Enter Name" name="name">
+	<br><input type="email"placeholder="Enter Email" name="email">
+	<br><input type="number"placeholder="Enter Phone Number" name="phonenumber">
+	<br><input type="text"placeholder="Enter Gender" name="gender">
+	<br><input type="number"placeholder="Enter Age" name="age">
+	
+	<input type="submit"  name="submit" style="cursor:pointer;width:200px;"value="Submit">
+	</form>
+	</div>
+<br>
+	<div style="background:#ff0000;display:flex;justify-content:center;align-items:center;min-height:100px;">
+       <button id="move"style="margin-right:50px;" >Update</button>
+	   <br>
+       <button id="movedel"style="margin-left:50px;" >Delete</button>
+	</div>
+	
+	
+	
+	</body>
+	<script>
+		document.getElementById('move').onclick= function () {
+          location.href='/update';
+		};
+		document.getElementById('movedel').onclick= function () {
+          location.href='/delete';
+		};
+	</script>
+	<style>
+		@media (max-width: 767px) {
+		.footer{
+			width:100%;
+		}
+		#herewego{
+			min-height:500px !important;
+		}
+	}
+	</style>

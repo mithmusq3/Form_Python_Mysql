@@ -1,0 +1,32 @@
+<body>
+	<div id="herewego">
+	<form method="POST" action="/update"  name="">
+	<input type="email" >
+	<br><input type="number" placeholder="Enter the changed value of age " name="age">
+	
+	<input type="submit"   name="submit" style="cursor:pointer;width:200px;"value="Update">
+	</form>
+	</div>
+<br>
+<div style="background:#ff0000;display:flex;justify-content:center;align-items:center;min-height:100px;">
+    <button id="move" >Update</button>
+ </div>
+ 
+ 
+ </body>
+ <script>
+     document.getElementById('move').onclick= function () {
+       location.href='/';
+     };
+ </script>
+</script>
+<style>
+    @media (max-width: 767px) {
+    .footer{
+        width:100%;
+    }
+    #herewego{
+        min-height:500px !important;
+    }
+}
+</style>
